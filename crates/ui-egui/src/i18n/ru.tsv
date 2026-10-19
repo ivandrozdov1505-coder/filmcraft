@@ -22,6 +22,7 @@
 	Align to Video Frame	Выровнять по видеокадру
 	Align to Video Frame as Group	Выровнять как группу по видеокадру
 	All Panels	Все панели
+	All Supported Files	Все файлы
 	Alpha	Альфа
 	Appearance	Оформление
 	Appearance…	Оформление…
@@ -240,6 +241,7 @@
 	Project	Проект
 	Project Manager…	Менеджер проекта…
 	Project Settings	Настройки проекта
+	Projects and Interchange	Проекты и обмен
 	Project…	Проект…
 	Properties	Свойства
 	Purple	Пурпурный
@@ -1308,6 +1310,7 @@
 	Audio Codec	Аудиокодек
 	Audio Duration	Длительность аудио
 	Audio Effects	Аудиоэффекты
+	Audio Files	Аудиофайлы
 	Audio Hardware	Аудиооборудование
 	Audio In Point	Точка входа аудио
 	Audio Info	Информация об аудио
@@ -1821,6 +1824,7 @@
 	Hard Mix	Жёсткое смешивание
 	Hardware decoding	Аппаратное декодирование
 	Hardware decoding: Auto uses the system's video decoder (VideoToolbox on macOS, Media Foundation on Windows, VA-API or NVDEC for H.264 and HEVC on Linux) for the streams it supports, and FilmCraft's own decoder for everything else or if the hardware fails. Media that is already open keeps its decoder until it is reopened.	Аппаратное декодирование: в режиме «Авто» используется системный видеодекодер (VideoToolbox в macOS, Media Foundation в Windows, VA-API или NVDEC для H.264 и HEVC в Linux) для поддерживаемых им потоков, а для всего остального или при сбое оборудования — собственный декодер FilmCraft. Уже открытые медиа сохраняют свой декодер до повторного открытия.
+	Hardware Encoding	Аппаратное кодирование
 	Head Size	Размер головы
 	Heart	Сердце
 	Height	Высота
@@ -2469,6 +2473,7 @@
 	Stereoscopic - Side by Side	Стереоскопический — бок о бок
 	Still	Изображение
 	Still Image Default Duration	Длительность изображений по умолчанию
+	Still Images	Изображения
 	Stone Church	Каменная церковь
 	Stopband Attenuation	Ослабление в полосе задерживания
 	Straight Color	Прямой цвет
@@ -2592,6 +2597,7 @@
 	Use Glow Color	Использовать цвет свечения
 	Use Media Source	Использовать источник медиа
 	Use Tint Color	Использовать цвет оттенка
+	Use the hardware encoder when available	Использовать аппаратный кодировщик, если он доступен
 	Utility	Утилиты
 	VHS Damage	Повреждения VHS
 	VR Blur	Размытие VR
@@ -2639,6 +2645,7 @@
 	Video Codec	Видеокодек
 	Video Duration	Длительность видео
 	Video Effects	Видеоэффекты
+	Video Files	Видеофайлы
 	Video In Point	Точка входа видео
 	Video Info	Инфо о видео
 	Video Limiter	Ограничитель видео

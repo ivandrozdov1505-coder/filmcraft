@@ -72,7 +72,7 @@ Evidence for every row: [docs/target-app-parity.md](docs/target-app-parity.md#by
 
 ## Languages
 
-Premiere ships 10 interface languages. Measured from our catalogs (3,593 strings, last measured 2026-10-19):
+Premiere ships 10 interface languages. Measured from our catalogs (3,600 strings, last measured 2026-10-19):
 
 | Language | Status | Strings |
 |---|---|---|

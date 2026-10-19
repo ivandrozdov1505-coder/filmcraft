@@ -35,7 +35,7 @@ right to left, but Arabic titles are reported broken (#395).
 ## Status
 
 Measured 2026-10-19 by counting entries in each catalog. The denominator is the union of all
-catalogs' sources (**3,593 strings**); strings not yet wrapped in `tl!` and engine messages are
+catalogs' sources (**3,600 strings**); strings not yet wrapped in `tl!` and engine messages are
 not in it, so real coverage is somewhat lower than shown. Estimates calibrated from #449 (Japanese,
 whole interface, one PR) at ~4–8 h per language for the catalog plus tests.
 
@@ -52,14 +52,14 @@ whole interface, one PR) at ~4–8 h per language for the catalog plus tests.
 | Japanese | ja | 3,487 (99.7%) | as zh-cn; system-font kanji may pick the Chinese fallback (#547) | CJK fonts, vertical title text | not recorded | partial | 4–8 h + review |
 | German | de | 3,590 (same entries as Spanish); must cover the core menus and the macOS app menu, no entry without a Spanish one | as Spanish | Latin (bundled fonts) | menus yes (#630); the rest not recorded, welcome | partial | review |
 | Korean | ko | 3,573 (same entries as Spanish, plus the macOS Settings item) | as Spanish | installed system Hangul font (Malgun Gothic, Apple SD Gothic Neo, Noto Sans CJK KR…); refused without one | not recorded; welcome | partial (#508) | review; Hangul in craft-fonts for the web |
-| Russian | ru | 3,592 (100%; every Spanish entry) | dialogs, Settings, effects, shortcuts, status; engine errors English | Cyrillic (bundled fonts), «ё» | not recorded; welcome | partial | native review |
+| Russian | ru | 3,599 (100%; every Spanish entry) | dialogs, Settings, effects, shortcuts, status; engine errors English | Cyrillic (bundled fonts), «ё» | not recorded; welcome | partial | native review |
 | Vietnamese | vi | 0 (0%) | — | Latin with stacked diacritics (font coverage to check) | — | none | 6–12 h + review |
 | *Other shipped:* Italian | it | 3,573 (same entries as Spanish, plus the macOS Settings item); must cover the core menus, no entry without a Spanish one | as Spanish | Latin (bundled fonts) | not recorded; welcome | partial | review |
 | *Other shipped:* Ukrainian | uk | 351 (10.0%) | menus only | Cyrillic (bundled) | not recorded | menus only | 5–9 h |
 
 UI strings are catalog entries (the non-comment lines of `src/i18n/<code>.tsv`; English counts the
 source strings in the code), so the rows were measured at different times: at this change the
-Spanish catalog has 3,592 entries, German 3,590, and Russian every Spanish one. Strings added
+Spanish catalog has 3,599 entries, German 3,597, and Russian every Spanish one. Strings added
 later may stay English in German until translated; Russian is required to cover every source.
 
 Premiere also ships Italian, which we cover like Spanish, and Russian, which now covers the whole
@@ -76,6 +76,7 @@ Every language needs native-speaker review (human).
 
 | Date | Change | Summary |
 |---|---|---|
+| 2026-10-19 | minor | Seven panel strings (Media Browser file-type filter, Hardware Encoding) in every full catalog, including German; Export setting labels wrap and table headings and import cards truncate with an ellipsis so longer translations fit; Spanish wording fixed |
 | 2026-10-19 | major | Russian (ru) covers the whole interface: 3,592 entries (100% of the Spanish catalog), `ru.tsv` translated from the English sources with Premiere-style Russian vocabulary; the i18n test requires every Spanish entry, a font test covers the Russian alphabet including «ё», System Language maps `ru-*`; native review welcome |
 | 2026-10-13 | minor | German (de) covers the whole interface: every entry of the Spanish catalog (3,590); the tests require the core menus and the macOS app menu and reject entries without a Spanish one |
 | 2026-10-11 | minor | German (de) ships the menus (#630): 371 of 3,498 strings (10.6%), native-reviewed; dimension now 2 menus-only, 5 none |
